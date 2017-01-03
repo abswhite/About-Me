@@ -1,18 +1,31 @@
+body {
+  background-color: #f3e3e2;
+}
+
 h1 {
-  font-family: cursive;
-  color: black;
+  font-family: "Palatino Linotype", sans-serif;
+  color: #280731;
+  font-size: 35px;
+  text-align: center;
 }
 
 p {
-  color: grey;
-  font-family: helvetica;
+  color: #a984b5;
+  font-family: "Book Antiqua";
 }
 
 
 .more-content{
-  background-color: #0000FF;
+  color: #5d395f;
+  text-align: left;
+  font-family: monospace;
+}
+
+.header {
+  font-family: cursive;
+  color: #70743a;
 }
 
 #something-else {
-  border: 5px dashed #FF0000;
+  border: 5px dotted #d0d0d0;
 }
