@@ -1,0 +1,18 @@
+h1 {
+  font-family: cursive;
+  color: black;
+}
+
+p {
+  color: grey;
+  font-family: helvetica;
+}
+
+
+.more-content{
+  background-color: #0000FF;
+}
+
+#something-else {
+  border: 5px dashed #FF0000;
+}
