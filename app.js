@@ -15,7 +15,7 @@ var name = prompt('What is your name?');
 console.log('The user\'s name is ' + name);
 
 //Question One
-var answerOne = prompt(name + ', this is a yes or no question, so please answer with a Y or N. Is Abigail\'s middle name is Margaret?').toUpperCase();
+var answerOne = prompt('1. ' + name + ', this is a yes or no question, so please answer with a Y or N. Is Abigail\'s middle name is Margaret?').toUpperCase();
 if(answerOne === 'N') {
   console.log('Correct. For Question One, the user answered ' + answerOne + '.');
 } else {
@@ -29,7 +29,7 @@ if (answerOne === 'N') {
 }
 
 //Question Two
-var answerTwo = prompt(name + ', here\'s another yes or no question. Did Abigail live in the UK last year?').toUpperCase();
+var answerTwo = prompt('2. ' + name + ', here\'s another yes or no question. Did Abigail live in the UK last year?').toUpperCase();
 if(answerTwo === 'Y') {
   console.log('Correct. For Question Two, the user answered ' + answerTwo + '.');
 } else {
@@ -43,7 +43,7 @@ if (answerTwo === 'Y') {
 }
 
 //Question Three
-var answerThree = prompt('You know the drill, ' + name + '. Y or N. Does Abigail enjoy gardening?').toUpperCase();
+var answerThree = prompt('3. You know the drill, ' + name + '. Y or N. Does Abigail enjoy gardening?').toUpperCase();
 if(answerOne === 'N') {
   console.log('Correct. For Question Three, the user answered ' + answerThree + '.');
 } else {
@@ -57,7 +57,7 @@ if (answerThree === 'N') {
 }
 
 //Question Four
-var answerFour = prompt(name + ', Y or N. Does Abigail have a dog, just as Adam does?').toUpperCase();
+var answerFour = prompt('4. ' + name + ', Y or N. Does Abigail have a dog, just as Adam does?').toUpperCase();
 if(answerFour === 'Y') {
   console.log('Correct. For Question Four, the user answered ' + answerFour + '.');
 } else {
@@ -71,7 +71,7 @@ if (answerFour === 'Y') {
 }
 
 //Question Five
-var answerFive = prompt('Last one ' + name + '! Y or N, please. Does Abigail enjoy yoga?').toUpperCase();
+var answerFive = prompt('5. Last one ' + name + '! Y or N, please. Does Abigail enjoy yoga?').toUpperCase();
 if(answerFive === 'Y') {
   console.log('Correct. For Question Five, the user answered ' + answerFive + '.');
 } else {
@@ -83,3 +83,16 @@ if (answerFive === 'Y') {
 } else {
   alert('Wrong. You lost.');
 }
+
+document.writeln('What is your name?');
+document.writeln(name);
+document.writeln('Question 1:  Is Abigail\'s middle name is Margaret?');
+document.writeln(answerOne);
+document.writeln('Question 2:  Did Abigail live in the UK last year?');
+document.writeln(answerTwo);
+document.writeln('Question 3:  Does Abigail enjoy gardening?');
+document.writeln(answerThree);
+document.writeln('Question 4:  Does Abigail have a dog, just as Adam does?');
+document.writeln(answerFour);
+document.writeln('Question 5:  Does Abigail enjoy yoga?');
+document.writeln(answerFive);
