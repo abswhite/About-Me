@@ -16,7 +16,15 @@ console.log('The user\'s name is ' + name);
 
 //Question One
 var answerOne = prompt('Question 1. ' + name + ', this is a yes or no question, so please answer with a Y or N. Is Abigail\'s middle name is Margaret?').toUpperCase();
-if(answerOne === 'N') {
+
+function answerOneFunc(answerOne){
+  if(answerOne === 'N') {
+    return true;
+  } else {
+    return false;
+  }
+}
+if (answerOneFunc(answerOne)) {
   console.log('Correct. For Question One, the user answered ' + answerOne + '.');
   alert('Good guess! Her middle name is Lauren, like Lauren Conrad, from The Hills, which she loves.');
   correctAnswer ++;
