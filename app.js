@@ -79,7 +79,7 @@ while(a < 4) {
   var response = 22;
 
   if(answerSix === response) {
-    alert('Well done! She is ' + response);
+    alert('Well done! She is ' + response + '.');
     a = 5;
     console.log('Correct. For Question Six, the user answered ' + answerSix + '.');
     correctAnswer ++;
@@ -96,55 +96,29 @@ while(a < 4) {
 }
 
 //Question Seven
-/*var attempts = 0;
+var attempts = 0;
 var b = 5;
-var locations = ['london', 'nashville', 'boston', 'seattle', 'waltham', 'danvers'];
+var locations = ['london', 'nashville', 'boston', 'seattle', 'waltham', 'danvers', 'danvers', 'waltham'];
 var locationsLength = locations.length;
 
 while(attempts < 6) {
   var answerSeven = prompt('Where has Abigail lived?').toLowerCase();
 
   for(var i = 0; i < locationsLength; i++) {
-    if(answerSeven === 'london' || answerSeven === 'nashville' || answerSeven === 'boston' || answerSeven === 'seattle' || answerSeven === 'danvers' || answerSeven === 'waltham') {
+    if(answerSeven === 'london' || answerSeven === 'nashville' || answerSeven === 'boston' || answerSeven === 'seattle' || answerSeven === 'danvers' || answerSeven === 'waltham' || answerSeven === 'danvers' || answerSeven === 'waltham') {
       console.log('Correct. For Question Seven, the user answered ' + answerSeven + '.');
       alert('That\'s right!');
       attempts = 8;
-      i = 6;
+      i = locationsLength + 1;
       correctAnswer++;
       console.log(attempts);
     } else {
       console.log('Incorrect. For Question Seven, the user answered ' + answerSeven + '.');
       alert('Not true, you have ' + b + ' answers left');
       b--;
-      i++;
+      i = locationsLength + 1;
       console.log(attempts);
 
-    }
-    attempts ++;
-  }
-}*/
-
-var attempts = 0;
-var b = 5;
-var locations = ['london', 'nashville', 'boston', 'seattle', 'waltham', 'danvers'];
-var locationsLength = locations.length;
-
-while(attempts < 6) {
-  var answerSeven = prompt('Where has Abigail lived?').toLowerCase();
-
-  for(var i = 0; i < locationsLength; i++) {
-    if(answerSeven === 'nashville' || answerSeven === 'boston' || answerSeven === 'seattle' || answerSeven = 'waltham' || answerSeven ==='danvers') {
-      console.log('Correct. For Question Five, the user answered ' + answerSeven + '.');
-      alert('That\'s right!');
-      attempts = 8;
-      i = locationsLength + 1;
-      correctAnswer++;
-      console.log(attempts);
-    } else {
-      console.log('Incorrect. For Question Five, the user answered ' + answerSeven + '.');
-      alert('Not true, you have ' + b + ' answers left');
-      b--;
-      i = locationsLength + 1;
     }
     attempts ++;
   }
