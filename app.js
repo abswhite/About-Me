@@ -116,20 +116,19 @@ if (questionFiveFunc(answerFive)) {
 var a = 0;
 var b = 3;
 
-while(a < 4) {
-  var answerSix = parseInt(prompt('How old is Abigail?'));
+function questionSixFunc(answerSix){
   var response = 22;
-
-  if(answerSix === response) {
+  var answerSixRes = answerSix;
+  if(answerSixRes === response) {
     alert('Well done! She is ' + response + '.');
     a = 5;
     console.log('Correct. For Question Six, the user answered ' + answerSix + '.');
     correctAnswer ++;
-  } else if(answerSix > response) {
+  } else if(answerSixRes > response) {
     alert('That guess it too high. You have ' + b + ' answers left.');
     b--;
     console.log('Inorrect. For Question Six, the user answered ' + answerSix + '. The answer is 22.');
-  } else if(answerSix < response) {
+  } else if(answerSixRes < response) {
     alert('That guess is too low. You have ' + b + ' answers left');
     console.log('Incorrect. For Question Six, the user answered ' + answerSix + '. The answer is 22.');
     b--;
@@ -138,6 +137,11 @@ while(a < 4) {
     console.log('Incorrect. For Question Six, the user answered ' + answerSix + '. The answer is 22.');
     b--;
   }
+}
+
+while(a < 4) {
+  var answerSix = parseInt(prompt('How old is Abigail?'));
+  questionSixFunc(answerSix);
   a++;
 }
 
