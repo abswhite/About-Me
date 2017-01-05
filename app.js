@@ -11,7 +11,7 @@ if(answerConfirm) {
 // use yesterday to help
 var correctAnswer = 0;
 
-var name = prompt('What is your name, bruh?');
+var name = prompt('What is your name?');
 console.log('The user\'s name is ' + name);
 
 //Question One
@@ -81,31 +81,59 @@ while(a < 4) {
   if(answerSix === response) {
     alert('Well done! She is ' + response);
     a = 5;
-    console.log('Correct. For Question Five, the user answered ' + answerFive + '.');
+    console.log('Correct. For Question Six, the user answered ' + answerSix + '.');
     correctAnswer ++;
   } else if(answerSix > response) {
     alert('That guess it too high. You have ' + b + ' answers left.');
     b--;
-    console.log('Inorrect. For Question Five, the user answered ' + answerSix + '. The answer is 22.');
+    console.log('Inorrect. For Question Six, the user answered ' + answerSix + '. The answer is 22.');
   } else {
     alert('That guess is too low. You have ' + b + ' answers left.');
-    console.log('Incorrect. For Question Five, the user answered ' + answerSix + '. The answer is 22.');
+    console.log('Incorrect. For Question Six, the user answered ' + answerSix + '. The answer is 22.');
     b--;
   }
   a++;
 }
 
 //Question Seven
-var attempts = 0;
+/*var attempts = 0;
 var b = 5;
-var locations = ['london', 'nashville', 'boston', 'seattle'];
+var locations = ['london', 'nashville', 'boston', 'seattle', 'waltham', 'danvers'];
 var locationsLength = locations.length;
 
 while(attempts < 6) {
   var answerSeven = prompt('Where has Abigail lived?').toLowerCase();
 
   for(var i = 0; i < locationsLength; i++) {
-    if(answerSeven === 'london' || answerSeven === 'nashville' || answerSeven === 'boston' || answerSeven === 'seattle') {
+    if(answerSeven === 'london' || answerSeven === 'nashville' || answerSeven === 'boston' || answerSeven === 'seattle' || answerSeven === 'danvers' || answerSeven === 'waltham') {
+      console.log('Correct. For Question Seven, the user answered ' + answerSeven + '.');
+      alert('That\'s right!');
+      attempts = 8;
+      i = 6;
+      correctAnswer++;
+      console.log(attempts);
+    } else {
+      console.log('Incorrect. For Question Seven, the user answered ' + answerSeven + '.');
+      alert('Not true, you have ' + b + ' answers left');
+      b--;
+      i++;
+      console.log(attempts);
+
+    }
+    attempts ++;
+  }
+}*/
+
+var attempts = 0;
+var b = 5;
+var locations = ['london', 'nashville', 'boston', 'seattle', 'waltham', 'danvers'];
+var locationsLength = locations.length;
+
+while(attempts < 6) {
+  var answerSeven = prompt('Where has Abigail lived?').toLowerCase();
+
+  for(var i = 0; i < locationsLength; i++) {
+    if(answerSeven === 'nashville' || answerSeven === 'boston' || answerSeven === 'seattle' || answerSeven = 'waltham' || answerSeven ==='danvers') {
       console.log('Correct. For Question Five, the user answered ' + answerSeven + '.');
       alert('That\'s right!');
       attempts = 8;
@@ -116,18 +144,19 @@ while(attempts < 6) {
       console.log('Incorrect. For Question Five, the user answered ' + answerSeven + '.');
       alert('Not true, you have ' + b + ' answers left');
       b--;
+      i = locationsLength + 1;
     }
     attempts ++;
   }
 }
 
-alert('The possible answers were: London, Nashville, Boston, Seattle.');
+alert('The possible answers were: London, Nashville, Boston, Seattle, Danvers, or Waltham.');
 
 //count answers
 if(correctAnswer > 5) {
   console.log('Congrats! You earned ' + correctAnswer + ' correct answers out of 7.');
-  alert('Congrats, ' + name + '! You earned ' + correctAnswer + ' correct answers out of 7.');
+  alert('Congrats, ' + name + '! You earned ' + correctAnswer + ' out of 7 potential correct answers.');
 } else {
-  console.log('Ouch, ' + name + ' You only earned ' + correctAnswer + ' correct answers out of 7.');
+  console.log('Ouch, ' + name + ' You only earned ' + correctAnswer + ' out of 7 potential correct answers.');
   alert('Ouch, You only earned  ' + correctAnswer + ' correct answers out of 7.');
 }
