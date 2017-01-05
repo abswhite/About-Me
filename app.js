@@ -87,8 +87,12 @@ while(a < 4) {
     alert('That guess it too high. You have ' + b + ' answers left.');
     b--;
     console.log('Inorrect. For Question Six, the user answered ' + answerSix + '. The answer is 22.');
+  } else if(answerSix < response) {
+    alert('That guess is too low. You have ' + b + ' answers left');
+    console.log('Incorrect. For Question Six, the user answered ' + answerSix + '. The answer is 22.');
+    b--;
   } else {
-    alert('That guess is too low. You have ' + b + ' answers left.');
+    alert('That guess is not a number. You have ' + b + ' answers left.');
     console.log('Incorrect. For Question Six, the user answered ' + answerSix + '. The answer is 22.');
     b--;
   }
