@@ -12,12 +12,35 @@ if(answerConfirm) {
 var correctAnswer = 0;
 
 var name = prompt('What is your name?');
-console.log('The user\'s name is ' + name);
+
+if (name) {
+  console.log('The user\'s name is ' + name);
+} else {
+  console.log('The user\'s name is undefined.');
+}
 
 //Question One
-var answerOne = prompt('Question 1. ' + name + ', this is a yes or no question, so please answer with a Y or N. Is Abigail\'s middle name is Margaret?').toUpperCase();
+var correctAnswer = 'N';
+var correctResponse = ['You got question 1 right', 'You got question 2 right'];
+var incorrectResponse = ['You got question 1 wrong', 'You got question 2 wrong'];
 
-function answerOneFunc(answerOne){
+var userAnswer = prompt('Question 1. ' + name + ', this is a yes or no question, so please answer with a Y or N. Is Abigail\'s middle name is Margaret?').toUpperCase();
+
+var correctAnswer = 'N';
+
+function answers() {
+  if(userAnswer = correctAnswer) {
+    alert(correctResponse[0]);
+  } else {
+    alert(incorrectResponse[0]);
+  }
+  console.log('User answered ' + userAnswer);
+}
+
+alert(answers());
+
+
+/*function answerOneFunc(answerOne){
   if(answerOne === 'N') {
     return true;
   } else {
@@ -32,7 +55,7 @@ if (answerOneFunc(answerOne)) {
   console.log('Incorrect. For Question One, the user answered ' + answerOne + '. The answer is N.');
   alert('Wrong but on the right track. Like her first name and her last name, Abigail\'s middle name is painfully anglosaxon. ' + 'Her middle name is Lauren.');
 }
-
+*/
 //Question Two
 var answerTwo = prompt('Question 2. ' + name + ', here\'s another yes or no question. Did Abigail live in the UK last year?').toUpperCase();
 
