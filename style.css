@@ -1,11 +1,11 @@
 body{
   background-color: #ff6f69;
-  font-family: geneva, sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
- 
+
 h1 {
   color: #fff0f0;
-  font-size: 50px;
+  font-size: 60px;
   margin-bottom: 5px;
   margin-left: 40%;
 }
@@ -15,9 +15,10 @@ h1 {
   border: none;
   width: 300px;
   border-radius: 15px;
-  margin-left: 40%;
+  margin-left: 38%;
   text-align: center;
-  font-family: cursive;
+  font-family: 'Shadows Into Light';
+  font-size: 20px;
   color: #99423f
 }
 
@@ -25,13 +26,27 @@ h1 {
   background-color: #ffeead;
   border: none;
   margin-top: 5px;
+  margin-bottom: 20px;
   width: 400px;
   border-radius: 15px;
   font-size: 14px;
   color: grey;
   padding: 7px 7px 7px 7px;
+  margin-left: 15px;
 
 }
+
+#bio {
+  font-size: 25px;
+  float: left;
+  margin-left: 40px;
+}
+
+#education {
+  float: left;
+  font-size: 14px;
+}
+
 
 .top-ten {
   background-color: #ffcc5c;
@@ -39,10 +54,13 @@ h1 {
   margin: 20px 2% 20px 2%;
   width: 25%;
   padding-left: 10px;
-  float: left;
   border-radius: 15px;
   color: #ffe2e1;
+  float: left;
+}
 
+.newdiv {
+  float: none;
 }
 
 #summary {

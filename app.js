@@ -57,7 +57,7 @@ if(answerTwoFunc(answerTwo)){
 var answerThree = prompt('Question 3. You know the drill, ' + name + '. Y or N. Does Abigail enjoy biking?').toUpperCase();
 
 function answerThreeFunc(answerThree){
-  if(answerThree === 'N') {
+  if(answerOne === 'N') {
     return true;
   } else {
     return false;
