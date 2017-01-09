@@ -20,7 +20,7 @@ if (name) {
 }
 
 //Question One
-var correctAnswer = 'N';
+/*var correctAnswer = 'N';
 var correctResponse = ['You got question 1 right', 'You got question 2 right'];
 var incorrectResponse = ['You got question 1 wrong', 'You got question 2 wrong'];
 
@@ -38,15 +38,17 @@ function answers() {
 }
 
 alert(answers());
+*/
+var answerOne = prompt('Question 1. ' + name + ', this is a yes or no question, so please answer with a Y or N. Is Abigail\'s middle name is Margaret?').toUpperCase();
 
-
-/*function answerOneFunc(answerOne){
+function answerOneFunc(answerOne){
   if(answerOne === 'N') {
     return true;
   } else {
     return false;
   }
 }
+
 if (answerOneFunc(answerOne)) {
   console.log('Correct. For Question One, the user answered ' + answerOne + '.');
   alert('Good guess! Her middle name is Lauren, like Lauren Conrad, from The Hills, which she loves.');
@@ -55,7 +57,7 @@ if (answerOneFunc(answerOne)) {
   console.log('Incorrect. For Question One, the user answered ' + answerOne + '. The answer is N.');
   alert('Wrong but on the right track. Like her first name and her last name, Abigail\'s middle name is painfully anglosaxon. ' + 'Her middle name is Lauren.');
 }
-*/
+
 //Question Two
 var answerTwo = prompt('Question 2. ' + name + ', here\'s another yes or no question. Did Abigail live in the UK last year?').toUpperCase();
 
@@ -80,7 +82,7 @@ if(answerTwoFunc(answerTwo)){
 var answerThree = prompt('Question 3. You know the drill, ' + name + '. Y or N. Does Abigail enjoy biking?').toUpperCase();
 
 function answerThreeFunc(answerThree){
-  if(answerOne === 'N') {
+  if(answerThree === 'N') {
     return true;
   } else {
     return false;
